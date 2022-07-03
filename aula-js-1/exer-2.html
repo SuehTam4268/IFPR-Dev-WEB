@@ -1,0 +1,25 @@
+<html>
+    <script>
+       
+        
+        const valor1 = Math.floor(Math.random() * 10);
+        const valor2 = Math.floor(Math.random() * 10);
+        document.write(valor1);
+        document.write("<br>");
+        document.write(valor2);
+    </script>
+    <h3>Qual a soma dos valores?</h3>
+    <input id="Valor" name="Valor">
+    <button type="submit" onclick="verificar()">Verificar</button>
+    <script>
+        function verificar(){
+            const a = document.querySelector("#Valor");
+            const valor = a.value;
+            if(valor == parseInt(valor1) + parseInt(valor2)){
+                document.write("Acertou");
+            }else{
+                document.write("Errou");
+            }
+        }
+    </script>
+</html>

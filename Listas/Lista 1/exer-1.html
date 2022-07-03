@@ -1,0 +1,17 @@
+<html>
+   <label>
+        <input id="PrimeiroNome" name="PrimeiroNome" placeholder="Insira seu nome">
+        <input id="SegundoNome" name="SegundoNome" placeholder="Insira seu sobre nome">
+        <button type="submit" onclick="Imprimir()">Manda Bala</button>
+    </label> 
+    <script>
+        const FirstName = document.querySelector("#PrimeiroNome");
+        const SecondName = document.querySelector("#SegundoNome");
+        function Imprimir(){
+            document.write(SecondName.value);
+            document.write(FirstName.value);
+            
+        }
+        
+    </script>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <div>
+        <h4>Insira o está em que reside</h4>
+        <input id="Salve" name="Salve" placeholder="Insira o estado">
+        <button type="submit" onclick="imprimir()">sa</button>
+    </div>
+    <script type="text/javascript">
+        
+        
+        function imprimir(){
+                const a = document.querySelector("#Salve");
+                const Estado = a.value;
+                if(Estado == "Parana"){
+                    document.write("Você Está autorizado a continuar");
+                }else{
+                    document.write("Não autorizado");
+                }   
+        }
+    </script> 
+</html>

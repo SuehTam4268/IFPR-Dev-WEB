@@ -1,0 +1,27 @@
+<html>
+    <input id="AnoCarro" placeholder="Ano do Carro">
+    <br>
+    <input id="ValorCarro" placeholder="Valor do carro">
+    <br>
+    <button onclick="Calcular()">Calcular Seguro</button>
+
+    <script>
+        var AnoCarro = document.querySelector("#AnoCarro");
+        var ValorCarro = document.querySelector("#ValorCarro");
+        function Calcular(){
+            if(AnoCarro.value >= 2020){
+                var porcentagem = (parseFloat(ValorCarro.value) * 5) / 100;
+                var ValorSeguro = parseFloat(ValorCarro.value) * porcentagem;
+                document.writeln(ValorSeguro);
+            }else if(AnoCarro.value > 2015 && AnoCarro.value < 2020){
+                var porcentagem = (parseFloat(ValorCarro.value) * 8) / 100;
+                var ValorSeguro = parseFloat(ValorCarro.value) * porcentagem;
+                document.writeln(ValorSeguro);
+            }else if(AnoCarro.value < 2015){
+                var porcentagem = (parseFloat(ValorCarro.value) * 11) / 100;
+                var ValorSeguro = parseFloat(ValorCarro.value) * porcentagem;
+                document.writeln(ValorSeguro);
+            }
+        }
+    </script>
+</html>

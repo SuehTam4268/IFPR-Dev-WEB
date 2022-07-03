@@ -1,0 +1,25 @@
+<html>
+    <input id="Valor1"><br>
+    <input id="Valor2"><br>
+    <input id="Valor3"><br>
+    <input id="Valor4"><br>
+    <input id="Valor5"><br>
+    <input id="Valor6"><br>
+    <button onclick="CalcularMedia()">Calcular</button>
+
+    <script>
+        var valor1 = document.querySelector("#Valor1");
+        var valor2 = document.querySelector("#Valor2");
+        var valor3 = document.querySelector("#Valor3");
+        var valor4 = document.querySelector("#Valor4");
+        var valor5 = document.querySelector("#Valor5");
+        var valor6 = document.querySelector("#Valor6");
+
+        function CalcularMedia(){
+        var media = (parseFloat(valor1.value) + parseFloat(valor2.value) + parseFloat(valor3.value) + parseFloat(valor4.value) + parseFloat(valor5.value) + parseFloat(valor6.value)) / 6;
+
+            document.writeln(media);
+        }
+    </script>
+
+</html>

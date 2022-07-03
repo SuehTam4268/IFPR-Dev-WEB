@@ -1,0 +1,13 @@
+<html>
+    <label><input id="ValorDolar" placeholder="Insira o valor em Dolar" ></label>
+    <button onclick="Converter()">Clique para converter</button>
+
+    <script>
+        var ValorDolar = document.querySelector("#ValorDolar");
+        const Dolar = 5.33
+        function Converter(){
+            var Conversao = parseFloat(ValorDolar.value) * parseFloat(Dolar);
+            document.writeln("Valor em reais =",Conversao);
+        }
+    </script>
+</html>

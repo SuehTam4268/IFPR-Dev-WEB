@@ -1,0 +1,12 @@
+<html>
+    <input id="Graus" placeholder="Insira o valor em Graus">
+    <button onclick="Converter()">Converter</button>
+    <script>
+        var Graus = document.querySelector("#Graus");
+        
+        function Converter(){
+            var Farenheit = (parseFloat(Graus.value) * 1.8) + 32
+            document.writeln(Farenheit);
+        }
+    </script>
+</html>

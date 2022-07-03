@@ -1,0 +1,14 @@
+<html>
+    <label><input id="PrecoProduto" type="number"></label>
+    <button onclick="CalcularDesconto()">Calcular</button>
+    <script>
+        var PrecoProduto = document.querySelector("#PrecoProduto");
+        
+        function CalcularDesconto(){
+          var  Desconto = (parseInt(PrecoProduto.value) * 10) / 100;
+          var  PrecoFinal = parseFloat(PrecoProduto.value) - parseFloat(Desconto);
+            document.writeln(PrecoFinal);
+            
+        }
+    </script>
+</html>
